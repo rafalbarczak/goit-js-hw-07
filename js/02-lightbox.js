@@ -9,3 +9,8 @@ const images = galleryItems
   )
   .join("");
 galleryEl.insertAdjacentHTML("afterbegin", images);
+
+var lightbox = new SimpleLightbox("ul.gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+});
